@@ -1,22 +1,35 @@
 package model;
 
+import java.text.DateFormat;
+import java.util.Date;
+
 public class Cliente {
-	private String codigo, nombre, apellido;
-	private int DNI,telefono;
+	private int codigo;
+	private int DNI;
+	private String nombre;
+	private String Apellido;
+	private String Telefono;
 	
-	public Cliente(String codigo, String nombre, String apellido, int telefono, int dNI) {
+	public Cliente(int codigo, int dNI, String nombre, String apellido, String telefono) {
 		super();
 		this.codigo = codigo;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.telefono = telefono;
 		DNI = dNI;
+		this.nombre = nombre;
+		Apellido = apellido;
+		Telefono = telefono;
 	}
-	public String getCodigo() {
+	
+	public int getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(String codigo) {
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
+	}
+	public int getDNI() {
+		return DNI;
+	}
+	public void setDNI(int dNI) {
+		DNI = dNI;
 	}
 	public String getNombre() {
 		return nombre;
@@ -25,26 +38,18 @@ public class Cliente {
 		this.nombre = nombre;
 	}
 	public String getApellido() {
-		return apellido;
+		return Apellido;
 	}
 	public void setApellido(String apellido) {
-		this.apellido = apellido;
+		Apellido = apellido;
 	}
-	public int getTelefono() {
-		return telefono;
+	public String getTelefono() {
+		return Telefono;
 	}
-	public void setTelefono(int telefono) {
-		this.telefono = telefono;
+	public void setTelefono(String telefono) {
+		Telefono = telefono;
 	}
-	public int getDNI() {
-		return DNI;
-	}
-	public void setDNI(int dNI) {
-		DNI = dNI;
-	}
-	
 	
 
 	
-
 }

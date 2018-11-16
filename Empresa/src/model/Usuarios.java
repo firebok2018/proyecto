@@ -1,36 +1,38 @@
 package model;
 
+import java.sql.Date;
+
 public class Usuarios {
-	private int id;
+	private int idUser;
 	private String usuario;
-	private String contraseña;
+	private String password;
 	private String correo;
-	private String nombre;
-	private String apellido;
-	private String last_Sign_In;
+	private String nomUser;
+	private String apeUser;
+	private String lastSigIn;
+	private String timeSignIn;
 	private int tipo;
-	public Usuarios(int id, String usuario, String contraseña, String correo, String nombre, String apellido,
-			String last_Sign_In, int tipo) {
+	public Usuarios(int idUser, String usuario, String password, String correo, String nomUser, String apeUser,
+			String lastSigIn, String timeSignIn, int tipo) {
 		super();
-		this.id = id;
+		this.idUser = idUser;
 		this.usuario = usuario;
-		this.contraseña = contraseña;
+		this.password = password;
 		this.correo = correo;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.last_Sign_In = last_Sign_In;
+		this.nomUser = nomUser;
+		this.apeUser = apeUser;
+		this.lastSigIn = lastSigIn;
+		this.timeSignIn = timeSignIn;
 		this.tipo = tipo;
 	}
-	
-	public int getId() {
-		return id;
+	public Usuarios(){
+		
 	}
-	public Usuarios() {
-		super();
-		// TODO Auto-generated constructor stub
+	public int getIdUser() {
+		return idUser;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setIdUser(int idUser) {
+		this.idUser = idUser;
 	}
 	public String getUsuario() {
 		return usuario;
@@ -38,11 +40,11 @@ public class Usuarios {
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
-	public String getContraseña() {
-		return contraseña;
+	public String getPassword() {
+		return password;
 	}
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public String getCorreo() {
 		return correo;
@@ -50,23 +52,29 @@ public class Usuarios {
 	public void setCorreo(String correo) {
 		this.correo = correo;
 	}
-	public String getNombre() {
-		return nombre;
+	public String getNomUser() {
+		return nomUser;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNomUser(String nomUser) {
+		this.nomUser = nomUser;
 	}
-	public String getApellido() {
-		return apellido;
+	public String getApeUser() {
+		return apeUser;
 	}
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+	public void setApeUser(String apeUser) {
+		this.apeUser = apeUser;
 	}
-	public String getLast_Sign_In() {
-		return last_Sign_In;
+	public String getLastSigIn() {
+		return lastSigIn;
 	}
-	public void setLast_Sign_In(String last_Sign_In) {
-		this.last_Sign_In = last_Sign_In;
+	public void setLastSigIn(String lastSigIn) {
+		this.lastSigIn = lastSigIn;
+	}
+	public String getTimeSignIn() {
+		return timeSignIn;
+	}
+	public void setTimeSignIn(String timeSignIn) {
+		this.timeSignIn = timeSignIn;
 	}
 	public int getTipo() {
 		return tipo;
@@ -74,8 +82,5 @@ public class Usuarios {
 	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
-	
-
-
 	
 }
